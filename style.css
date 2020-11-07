@@ -1,0 +1,131 @@
+* {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-rows: 50px  1fr 50px;
+    grid-template-areas: 
+      "h h h h h h h h h h"
+      "h h h h h h h h h h"
+      "s b b b b b b b b b"
+      "s b b b b b b b b b"
+      "f f f f f f f f f f"
+      "f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    background-color: #826e64;
+    text-align: center;
+    font-size: 32px;
+    padding: 4px 0px 16px 0px;
+}
+
+.notes {
+    grid-area: s;
+    font-size: 20px;
+    background-color: #ffffff;
+    height: auto;
+}
+
+.back {
+    grid-area: b;
+    background-color: rgb(182, 182, 182);
+}
+
+.notes ul {
+    font-size: 16px;
+}
+
+.footer {
+    grid-area: f;
+    background-color: #c7a493;
+    text-align: center;
+    font-size: 32px;
+    padding-top: 10px;
+}
+
+.footer img {
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.back .dark {
+    display: flex;
+    width: 80px;
+    font-size: 14px;
+    border: solid rgb(70, 70, 70);
+    background-color: rgb(70, 70, 70);
+    justify-content: center;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+}
+
+.back .note {
+    display: flex;
+    width: 80px;
+    font-size: 14px;
+    border: solid rgb(52, 150, 84);
+    background-color: rgb(52, 150, 84);
+    justify-content: center;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+}
+
+.back .textbox {
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.back {
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.savedel {
+    background-color: rgb(219, 219, 219);
+    align-items: baseline;
+    align-content: center;
+    display: flex;
+}
+
+.savedel .save {
+    display: flex;
+    width: 60px;
+    font-size: 14px;
+    border: solid rgb(52, 150, 84);
+    background-color: rgb(52, 150, 84);
+    justify-content: center;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+}
+
+.savedel .cancel {
+    display: flex;
+    width: 60px;
+    font-size: 14px;
+    border: solid rgb(236, 48, 48);
+    background-color: rgb(236, 48, 48);
+    justify-content: center;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 10px 10px 10px 10px;
+    margin: 20px;
+}
