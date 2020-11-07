@@ -90,6 +90,7 @@
     margin: 40px;
     padding: 10px;
     border-radius: 10px 10px 10px 10px;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .back {
@@ -128,4 +129,59 @@
     padding: 8px;
     border-radius: 10px 10px 10px 10px;
     margin: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        font-size: 10px;
+    }
+
+    .header {
+        font-size: 20px;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    .notes {
+        font-size: 10px;
+    }
+
+    .notes ul {
+        font-size: 8px;
+    }
+
+    .back .dark {
+        font-size: 10px;
+        width: 60px;
+        padding: 6px;
+        margin: 16px;
+    }
+
+    .back .note {
+        font-size: 10px;
+        width: 60px;
+        padding: 6px;
+        margin: 16px;
+    }
+
+    .savedel .cancel {
+        font-size: 10px;
+        width: 40px;
+        padding: 6px;
+        margin: 16px;
+    }
+
+    .savedel .save {
+        font-size: 10px;
+        width: 40px;
+        padding: 6px;
+        margin: 16px;
+    }
+
 }
