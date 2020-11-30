@@ -14,30 +14,45 @@
         <div class="header">Take Better Notes</div>
         <div class="footer">Keep in Touch
             <br>
-            <img src="images/youtube.png" alt="youtube" width="80px">
-            <img src="images/facebook.png" alt="facebook" width="80px">
+            <a href='https://www.youtube.com/channel/UCTX6s7xQ1D9qvqEmGHlEsCA'>
+                <img src="images/youtube.png" alt="youtube" width="80px">
+            </a>
+            <a href='https://www.facebook.com/jordan.gavinchuk/'>
+                <img src="images/facebook.png" alt="facebook" width="80px">
+            </a>
         </div>
         <div class="notes">My Notes:
             
-            <ul>
-                <li>note one</li>
-                <li>note two</li>
+            <ul id="note_space">
+
             </ul>
-            <!-- Added as if there would be info. Also proves scroll effect -->
-            <br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
         <div class= "back">
-            <div class="dark">Dark Theme</div>
-            <div class="note">New Note</div>
-            <div class="textbox">This is a placeholder</div>
+            <div class="dark">
+                <button id="dark_button" onclick="dark(document.getElementsByClassName('back'))"
+                onmouseover="document.getElementById('dark_button').style.borderColor = 'white'"
+                onmouseout="document.getElementById('dark_button').style.borderColor = 'rgb(70, 70, 70)'">Dark Theme</button>
+            </div>
+            <div class="note">
+                <button id="new_button" onclick="new_note()" onmouseover="document.getElementById('new_button').style.borderColor = 'white'"
+                onmouseout="document.getElementById('new_button').style.borderColor = 'rgb(52, 150, 84)'">New Note</button>
+            </div>
+            <div class="textbox">
+                <input id="note_box" type="text">
+            </div>
             <section class="savedel">
-                <div class="save">Save</div>
-                <div class="cancel">Cancel</div>
+                <div class="save">
+                    <button id='save_button' onclick="save(document.getElementById('note_box').value)">Save</button>
+                </div>
+                <div class="cancel">
+                    <button id='cancel_button' onclick="cancel()">Cancel</button>
+                </div>
             </section>
         </div>
 
         
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
