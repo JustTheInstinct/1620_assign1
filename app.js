@@ -151,3 +151,42 @@ function cancel() {
         document.getElementById('cancel_button').style.opacity = 0.2;
     };
 };
+
+let selected = document.querySelector('#note_space').addEventListener('mouseover', saved)
+function saved() {
+
+    let note_counter = 0;
+    // Note item background switch
+    while (note_counter < note_count) {
+        document.getElementById('note' + note_counter).style.color = '#52c1e3';
+        note_counter++;
+    };
+    note_counter = 0
+    while (note_counter < note_count) {
+        document.getElementById('note' + note_counter).addEventListener('mouseout', revert)
+        note_counter++;
+    };
+    note_counter = 0
+
+}
+
+function revert() {
+    if (dark_mode == true) {
+        let note_counter = 0;
+        // Note item background switch
+        while (note_counter < note_count) {
+            document.getElementById('note' + note_counter).style.color = '#ffffff';
+            note_counter++;
+        };
+        note_counter = 0;
+    }
+
+    else {
+        let note_counter = 0;
+        // Note item background switch
+        while (note_counter < note_count) {
+            document.getElementById('note' + note_counter).style.color = '#000000';
+            note_counter++;
+        };
+    };
+}
